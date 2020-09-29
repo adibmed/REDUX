@@ -1,10 +1,14 @@
-import React from 'react'; 
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Login from "./Login";
 
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <div className="app">
-      <h1>This is my app</h1>
+      <h1>Login</h1>
+      <h3>{user ? `This is my app${user}` : `No user is logged in`}</h3>
+      <Login setUser={setUser} />
     </div>
   );
 }
