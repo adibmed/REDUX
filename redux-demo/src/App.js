@@ -1,10 +1,12 @@
 import React from 'react';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import Login from './user/Login';
 
 function App() {
   return (
     <div className="App">
+      <Login />
       <header className="App-header"> 
         <Counter />
         <p>
